@@ -1,0 +1,25 @@
+import os
+os.system("cls")
+
+#ENTRADA
+
+nome = (input("digite o nome do produto:"))
+quantidade = int(input("digite a quantidade: "))
+preco_unitario = float(input("digite o preço: "))
+
+#PROCESSAMENTO
+total = (quantidade * preco_unitario)
+
+if quantidade <= 5:
+    desconto = total * 0.02
+elif quantidade > 5 and quantidade <= 10:
+    desconto = total * 0.03
+else:
+    desconto =  total * 0.05
+total_pagar = total - desconto
+  
+#SAIDA
+print("total", total)
+print("desconto", desconto)
+print("total a pagar", total_pagar)
+print("///FIM ALGORITMO///")
